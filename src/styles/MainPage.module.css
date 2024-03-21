@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+.mainPageBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/bg_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.mainPageHeader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo{
+    font-family: 'Metal Mania', cursive;
+  font-size: 3em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a{
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.navigation a:hover::after{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btnLoginPopup{
+
+  font-size: 15px;
+  color:#fff;
+  background: linear-gradient(to left,#ad5389,#3c1053 ,#ad5389);
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 80px;
+  background-size: 200%;
+  margin-left: 40px;
+  transition: .5s;
+}
+
+.navigation .btnLoginPopup:hover{
+  background-position: right;
+}
+
+
+
+
+.wrapper{
+  position: relative;
+
+
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform .5s ease,height .2s ease;
+}
+
+.wrapper.activePopup {
+  transform: scale(1);
+}
+
+.wrapper.active{
+  height: 570px;
+}
+
+
+.wrapper .formBox{
+  width: 100%;
+  padding: 40px;
+}
+
+.wrapper .formBox.login{
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .formBox.login{
+  transition: none;
+  transform: translate(-400px);
+}
+
+.wrapper .formBox.register{
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .formBox.register {
+  transition: transform .18s ease;
+  transform: translateX(0);
+}
+
+
+.wrapper .iconClose{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #0c0024;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+
+.formBox h2{
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+.inputBox{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #300b44;
+  margin: 30px 0;
+
+}
+
+
+.inputBox label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: .5s;
+
+}
+
+.inputBox input:focus~ label,
+.inputBox input:valid~ label{
+  top: -5px;
+}
+
+.inputBox input{
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fb8dff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+
+}
+
+.inputBox .icon{
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #0c0024;
+  line-height: 57px;
+}
+
+.rememberForgot{
+  font-size: 11px;
+  color: #0c0024;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rememberForgot label input{
+  accent-color: #210026;
+  margin-right: 3px;
+}
+
+.rememberForgot a{
+  color: #d105b2;
+  text-decoration: none;
+}
+
+.rememberForgot a:hover{
+  text-decoration: underline;
+}
+
+
+.btn2{
+  width: 100%;
+  height: 45px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  font-family: "Stalinist One", sans-serif;
+  color:#fff;
+  background: linear-gradient(to left,#ad5389,#3c1053 ,#ad5389);
+  text-decoration: none;
+  border-radius: 20px;
+  background-size: 200%;
+  transition: .5s;
+}
+
+.btn2:hover{
+  background-position: right;
+}
+
+.loginRegister{
+  font-size: .9em;
+  color: #e9e2f8;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.loginRegister p a{
+  color: #d105b2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.loginRegister p a:hover{
+  text-decoration: underline;
+}

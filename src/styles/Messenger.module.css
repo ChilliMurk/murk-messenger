@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
+.msg {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.msgBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/BACKGROUND2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.msgPersonalNavigate{
+
+    width: 228px;
+    height: 700px;
+    background-image: url(../img/PenalPer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Добавляем отступы внутри области */
+
+
+}
+.msgPfpContainer{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e9e2f8;
+    padding: 20px;
+
+}
+
+
+
+
+
+.msgPersonalName{
+    width: 169px;
+    height: 165px;
+    background-image: url(../img/p2.png);
+    background-repeat: no-repeat;
+
+    margin: 0px 0px 30px 0px;
+    padding: 30px 25px 25px 20px;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+
+.msgPersonalUsername p{
+    font-size: 4vw;
+    white-space: nowrap;
+
+    background-image: linear-gradient(43deg, #0b0786 0%, #ed0194 46%, #1f0325 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.msgChats{
+    width: 409px;
+    height: 700px;
+    background-image: url(../img/Ctats2.png);
+    background-repeat: no-repeat;
+
+}
+
+.msgChats input{
+    width: 320px;
+    height: 43px;
+    margin: 27px 40px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: linear-gradient(to left,rgba(255, 114, 215, 1),rgba(220, 65, 255, 1) ,rgba(189, 128, 251, 1));
+    background-size: 200%;
+    transition: .5s;
+    padding: 0 42px 0 10px;
+}
+
+
+.msgChats input:hover{
+    background-position: right;
+}
+
+
+
+.msgChats .iconSearch{
+    position: absolute;
+    margin: 35px 325px 30px;
+    font-size: 1.5em;
+}
+
+
+
+.msgPersonalChat{
+    width: 847px;
+    height: 700px;
+    background-image: url(../img/PersonalChat2.png);
+    background-repeat: no-repeat;
+}
+
+.msgPersonalChatHeader{
+    display: flex;
+    width: 597px;
+    height: 85px;
+    background-image: url(../img/Windd.png);
+    background-repeat: no-repeat;
+    margin: 13px 150px 30px;
+    padding: 27px 20px 20px 30px;
+
+}
+
+.msgPersonalChatPfp{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e9e2f8;
+
+}
+
+
+
+.msgConversation{
+    background-color: #fb8dff;
+    width: 660px;
+    height: 474px;
+
+    backdrop-filter: blur(20px);
+    margin: 13px 90px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+    padding: 10px;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6a0370 #d059e8;
+}
+
+.messageRight {
+    margin: 0px 10px 10px 0px;
+    margin-left: auto;
+    margin-right: 5px;
+    max-width: 300px;
+
+    padding: 10px 20px;
+    font-size: 13px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background-color: #c737d2;
+    color: white;
+}
+
+.messageLeft {
+    margin: 0px 10px 10px 0px;
+    margin-left: 5px;
+    margin-right: auto;
+    font-size: 13px;
+
+    max-width: 300px;
+    padding: 10px 20px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    background-color: #650380;
+    color: #ffffff;
+}
+
+
+.msgConversation button{
+    width: 70px;
+    font-size: 10px;
+    outline: none;
+
+    background: linear-gradient(to left,rgba(255, 114, 215, 1),rgba(220, 65, 255, 1) ,rgba(189, 128, 251, 1));
+    background-size: 200%;
+    transition: .5s;
+    border: none;
+
+    border-radius: 20px;
+
+    margin: 0 0 0 8px;
+
+}
+
+.msgMessageInput input{
+
+    width: 680px;
+    height: 43px;
+    margin: 1px 80px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: linear-gradient(to left,rgba(255, 114, 215, 1),rgba(220, 65, 255, 1) ,rgba(189, 128, 251, 1));
+    background-size: 200%;
+    transition: .5s;
+
+    padding: 0 45px 0 15px;
+}
+
+.msgMessageInput input:hover{
+    background-position: right;
+}
+
+.msgMessageInput .iconMassage{
+    position: absolute;
+    margin: 10px 722px 30px;
+    font-size: 1.5em;
+}
+
+
+.msgUsers{
+    max-width: 330px;
+    max-height: 550px;
+    overflow-y: auto;
+    margin: 10px 34px 30px;
+
+    scrollbar-width: thin;
+    scrollbar-color: #6a0370 #d059e8;
+}
+
+
+
+.msgUsers p{
+    width: 298px;
+    height: 77px;
+    background-image: url(../img/containerChat.png);
+    margin: 8px 10px 0px;
+    padding: 30px 45px 0 15px;
+    overflow: hidden;
+}
+
+.msgPopupChat{
+    max-width: 330px;
+    max-height: 50px;
+    margin: 0px 33px 0px;
+
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #6a0370 #d059e8;
+
+}
+
+.msgChats button{
+    width: 300px;
+    height: 43px;
+    background-image: url(../img/fffffff3.png);
+    background-color: #550186;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.msgPersonalName p{
+    font-size: 0.7vw;
+    white-space: nowrap;
+    color: #e9e2f8;
+    display: flex;
+    align-items: center;
+}
+
+.msgPersonalChatName{
+    max-width: 450px;
+    overflow: hidden;
+    font-size: 20px;
+    background-image: linear-gradient(43deg, #0b0786 0%, #ed0194 46%, #1f0325 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 11px 0px 0px 30px;
+}
+
+.msgPfpContainer{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+    display:flex;
+
+    vertical-align: middle;
+    text-align: center;
+    line-height: 135px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.msgPersonalAvatar{
+    margin: 150px 0px 0px 120px;
+}
+
+.msgAllItems{
+    display: flex;
+}
+
+.pfpContainer{
+    width: 387px;
+    height: 237px;
+    overflow: hidden;
+    display:flex;
+border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    vertical-align: middle;
+    text-align: center;
+    line-height: 135px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.pfpContainer img,
+.msgPersonalChatPfp img{
+
+    width: 100%; height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.msgImage{
+    margin: 10px 0px 0px 130px;
+}
+
+
+.msgNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msgButtonProfile,
+.msgButtonChats,
+.msgExit{
+    width: 170px;
+    height: 45px;
+
+    margin-bottom: 20px;
+
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Stalinist One", sans-serif;
+    color:#fff;
+    background: linear-gradient(to left,#ad5389,#3c1053 ,#ad5389);
+    text-decoration: none;
+    border-radius: 20px;
+    background-size: 200%;
+    transition: .5s;
+}
+.msgButtonProfile:hover,
+.msgButtonChats:hover,
+.msgExit:hover{
+    background-position: right;
+}
+
+.msgProfile{
+    width: 1204px;
+    height: 700px;
+    background-image: url(../img/UserProfile.png);
+    background-repeat: no-repeat;
+
+}
+
+.msgProfileInfo {
+
+    width: 400px;
+    height: 452px;
+    background-image: url(../img/UserInfo.png);
+    background-repeat: no-repeat;
+    margin: 130px 0px 0px 130px;
+    padding: 100px 0px 0px 0px;
+}
+
+.msgProfileInfo p{
+    margin: 10px 0px 0px 50px;
+}
+
+.msgWindowPersonal p{
+    font-size: 12px;
+    max-width: 240px;
+    word-wrap: break-word;
+    color: white;
+}
+
+.msgWindowPersonal h6{
+    color: black;
+}
+
+.msgWindowPersonal{
+    width: 268px;
+    height: 140px;
+    background-image: url(../img/WindowPers.png);
+    padding: 0px 0px 0px 40px;
+}
